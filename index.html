@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Media Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="upload-panel">
+            <label> 1. Select your Movie: 
+                <input type="file" id="movie" accept="video/*">
+            </label>
+            <br><br>
+            <label> 2. Add Captions (.vtt): 
+                <input type="file" id="capts" accept=".vtt">
+            </label>
+        </div>
+
+      
+        <div class="player-wrapper">
+            <video id="myPlayer" controls>
+                <source id="videoSource" src="" type="video/mp4">
+               >
+                <track id="captionTrack" kind="subtitles" srclang="en" label="English" default>
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
